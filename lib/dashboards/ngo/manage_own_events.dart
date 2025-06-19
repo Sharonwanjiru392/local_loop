@@ -12,8 +12,8 @@ class ManageOwnEventsScreen extends StatefulWidget {
 class _ManageOwnEventsScreenState extends State<ManageOwnEventsScreen> {
   final userId = FirebaseAuth.instance.currentUser?.uid;
 
-  static const Color themeColor = Color(0xFF5B2C6F); // Primary
-  static const Color gradientEndColor = Color(0xFF9B59B6); // Secondary
+  static const Color themeColor = Color(0xFF5B2C6F); 
+  static const Color gradientEndColor = Color(0xFF9B59B6); 
 
   Future<void> _confirmAndDelete(String docId) async {
     final confirm = await showDialog<bool>(
